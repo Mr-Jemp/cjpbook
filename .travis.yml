@@ -15,6 +15,6 @@ after_script:
 
 # 在master分支上有了新的提交会触发.yml脚本
 branches:
-  only:
+  only: 
     - master
 
