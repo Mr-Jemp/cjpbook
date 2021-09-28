@@ -1,2 +1,3 @@
 # cjpbook
-自动化构建demo
+
+Gitbook自动化构建demo。
