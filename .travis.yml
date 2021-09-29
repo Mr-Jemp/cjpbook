@@ -11,7 +11,7 @@ after_script:
   - git config user.email "${USER_EMAIL}"  # 设置git用户邮箱
   - git add .        # 将文件改动添加到暂存区
   - git commit -m "publish gitbook" # 将暂存区内容添加到本地仓库
-  - git push --force --quiet "https://${ACC_TOKEN}@${GH_REF}" main:${BRANCH} # 将文件改动推送到版本库
+  - git push --force --quiet "https://${ACC_TOKEN}@${GH_REF}" master:${BRANCH} # 将文件改动推送到版本库
 
 # 在main分支上有了新的提交会触发.yml脚本
 branches:
