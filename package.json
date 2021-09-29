@@ -1,0 +1,23 @@
+{
+  "name": "cjpbook",
+  "version": "1.0.0",
+  "description": "Gitbook自动化构建demo。",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mr-Jemp/cjpbook.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mr-Jemp/cjpbook/issues"
+  },
+  "homepage": "https://github.com/Mr-Jemp/cjpbook#readme",
+  "devDependencies": {
+    "gitbook-cli": "^2.3.2"
+  }
+}

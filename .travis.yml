@@ -1,0 +1,20 @@
+language: node_js
+node_js:
+  - "10"
+
+# 这个script在node.js项目中就是npm test
+after_script:
+  - gitbook build    # 构建成html文件，默认在_book目录下
+  - cd ./_book       # 进入_book目录
+  - git init         # 初始化git仓库
+  - git config user.name "${USER_NAME}"    # 设置git用户名
+  - git config user.email "${USER_EMAIL}"  # 设置git用户邮箱
+  - git add .        # 将文件改动添加到暂存区
+  - git commit -m "publish gitbook" # 将暂存区内容添加到本地仓库
+  - git push --force --quiet "https://${ACC_TOKEN}@${GH_REF}" master:${BRANCH} # 将文件改动推送到版本库
+
+# 在main分支上有了新的提交会触发.yml脚本
+branches:
+  only: 
+    - main
+
